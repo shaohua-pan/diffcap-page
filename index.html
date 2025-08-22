@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <meta property="og:title"
+    content="DiffCap: Diffusion-based Real-time Human Motion Capture using Sparse IMUs and a Monocular Camera" />
+  <meta property="og:url" content="https://shaohua-pan.github.io/diffcap-page/" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <title>DiffCap: Diffusion-based Real-time Human Motion Capture using Sparse IMUs and a Monocular Camera</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWRYSDM25P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EWRYSDM25P');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="icon" href="static/figures/icon2.png">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://shaohua-pan.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://shaohua-pan.github.io/robustcap-page">
+              RobustCap
+            </a>
+            <a class="navbar-item" href="https://shaohua-pan.github.io/diffcap-page">
+              DiffCap
+            </a>
+            <a class="navbar-item" href="https://xinyu-yi.github.io/GlobalPose/">
+              GlobalPose
+            </a>
+            <a class="navbar-item" href="https://xinyu-yi.github.io/EgoLocate/">
+              EgoLocate
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="publication-header">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <!-- <div class="columns is-centered"> -->
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">DiffCap: Diffusion-based Real-time Human Motion Capture using Sparse IMUs and a Monocular Camera</h1>
+          <div class="is-size-3 publication-authors">
+            TVCG 2025
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="publication-author-block">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://shaohua-pan.github.io">Shaohua Pan</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://xinyu-yi.github.io/">Xinyu Yi</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Yan Zhou<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Weihua Jian<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Yuan Zhang<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Pengfei Wan<sup>2</sup>
+              </span>
+              <span class="author-block">
+                <a href="http://xufeng.site/">Feng Xu</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Tsinghua University,</span>
+              <span class="author-block"><sup>2</sup>KuaiShou Technology</span>
+            </div>
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2508.06139" target="_blank"
+                    class="external-link button is-normal is-rounded">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/shaohua-pan/DiffCap" target="_blank"
+                    class="external-link button is-normal is-rounded">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+
+                </span>
+
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=EYVZ1Cdnb2Y" target="_blank" class="external-link button is-normal is-rounded">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <p style="margin-bottom: 30px">
+              <iframe width="720" height="405" src="https://www.youtube.com/embed/EYVZ1Cdnb2Y"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </p>
+          </div>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Combining sparse IMUs and a monocular camera is a new promising setting to perform real-time human motion capture. This paper proposes a diffusion-based solution to learn human motion priors and fuse the two modalities of signals together seamlessly in a unified framework. By delicately considering the characteristics of the two signals, the sequential visual information is considered as a whole and transformed into a condition embedding, while the inertial measurement is concatenated with the noisy body pose frame by frame to construct a sequential input for the diffusion model. Firstly, we observe that the visual information may be unavailable in some frames due to occlusions or subjects moving out of the camera view. Thus incorporating the sequential visual features as a whole to get a single feature embedding is robust to the occasional degenerations of visual information in those frames. On the other hand, the IMU measurements are robust to occlusions and always stable when signal transmission has no problem. So incorporating them frame-wisely could better explore the temporal information for the system. Experiments have demonstrated the effectiveness of the system design and its state-of-the-art performance in pose estimation compared with the previous works.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container">
+
+        <div class="column is-centered has-text-centered">
+          <img src="static/images/method.png" width="720" />
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+ 
+
+  <section class="section hero is-light" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @ARTICLE{11118315,
+          author={Pan, Shaohua and Yi, Xinyu and Zhou, Yan and Jian, Weihua and Zhang, Yuan and Wan, Pengfei and Xu, Feng},
+          journal={IEEE Transactions on Visualization and Computer Graphics}, 
+          title={DiffCap: Diffusion-Based Real-Time Human Motion Capture Using Sparse IMUs and a Monocular Camera}, 
+          year={2025},
+          volume={},
+          number={},
+          pages={1-12},
+          keywords={Diffusion models;Cameras;Visualization;Motion capture;Accuracy;Sensors;Real-time systems;Hands;Switches;Videos;Diffusion models;motion capture;pose estimation},
+          doi={10.1109/TVCG.2025.3596403}}        
+    </code></pre>
+    </div>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-centered has-text-centered">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> and <a
+              href="https://guytevet.github.io/mdm-page/"></a> MDM project pages. If you want
+            to reuse their source code</a>, please credit them appropriately.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript">
+    var sc_project = 12351448;
+    var sc_invisible = 1;
+    var sc_security = "c676de4f"; 
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+          class="statcounter" src="https://c.statcounter.com/12351448/0/c676de4f/1/" alt="Web Analytics"></a></div>
+  </noscript>
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
